@@ -44,7 +44,7 @@ pip install md2pdf-bookmarks
 
 ```bash
 git clone https://github.com/TbusOS/md-to-pdf.git
-cd md2pdf
+cd md-to-pdf
 pip install .
 ```
 
@@ -175,6 +175,24 @@ Noto Sans CJK SC → WenQuanYi Micro Hei → SimHei → PingFang SC → Microsof
 ```
 
 覆盖 Linux、macOS、Windows 上的常见中文字体。推荐安装 [Noto Sans CJK](https://github.com/notofonts/noto-cjk/releases) 以获得最佳效果。
+
+## Cursor Skill
+
+本仓库在 `skill/` 目录下包含一个 [Cursor](https://www.cursor.com/) Skill，让 Cursor 的 AI 代理在你要求将 Markdown 转为 PDF 时自动调用 `md2pdf`。
+
+安装方式 — 软链接或复制到 Cursor skills 目录：
+
+```bash
+ln -s "$(pwd)/skill" ~/.cursor/skills/md-to-pdf
+```
+
+或直接复制：
+
+```bash
+cp -r skill ~/.cursor/skills/md-to-pdf
+```
+
+安装后，当你让 AI 转换 Markdown 为 PDF 时，它会自动使用 `md2pdf` 命令。
 
 ## 许可证
 

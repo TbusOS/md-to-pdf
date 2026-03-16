@@ -46,7 +46,7 @@ Or install from source:
 
 ```bash
 git clone https://github.com/TbusOS/md-to-pdf.git
-cd md2pdf
+cd md-to-pdf
 pip install .
 ```
 
@@ -175,6 +175,24 @@ Noto Sans CJK SC → WenQuanYi Micro Hei → SimHei → PingFang SC → Microsof
 ```
 
 This covers common CJK fonts across Linux, macOS, and Windows. For best results, install [Noto Sans CJK](https://github.com/notofonts/noto-cjk/releases).
+
+## Cursor Skill
+
+This repo includes a [Cursor](https://www.cursor.com/) Skill in the `skill/` directory, which enables Cursor's AI agent to use `md2pdf` automatically when you ask it to convert Markdown to PDF.
+
+To install the skill, symlink or copy it to your Cursor skills directory:
+
+```bash
+ln -s "$(pwd)/skill" ~/.cursor/skills/md-to-pdf
+```
+
+Or copy it:
+
+```bash
+cp -r skill ~/.cursor/skills/md-to-pdf
+```
+
+After installation, the AI agent will automatically invoke `md2pdf` when you request Markdown-to-PDF conversion.
 
 ## License
 
