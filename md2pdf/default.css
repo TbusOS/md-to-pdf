@@ -1,0 +1,111 @@
+@page {
+    size: A4;
+    margin: 2cm;
+}
+
+body {
+    font-family: "Noto Sans CJK SC", "WenQuanYi Micro Hei", "SimHei",
+                 "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1 {
+    font-size: 20pt;
+    border-bottom: 2px solid #333;
+    padding-bottom: 6px;
+    margin-top: 32px;
+}
+
+h2 {
+    font-size: 16pt;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-top: 24px;
+}
+
+h3 {
+    font-size: 13pt;
+    margin-top: 16px;
+}
+
+h4, h5, h6 {
+    font-size: 11pt;
+    margin-top: 12px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 10pt;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 10pt;
+    font-family: "Noto Sans Mono CJK SC", "Courier New", "Consolas", monospace;
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 9pt;
+    overflow-x: auto;
+    line-height: 1.4;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 3px solid #ddd;
+    margin: 12px 0;
+    padding: 8px 16px;
+    color: #666;
+}
+
+ul, ol {
+    margin: 8px 0;
+    padding-left: 24px;
+}
+
+li {
+    margin: 4px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 24px 0;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
